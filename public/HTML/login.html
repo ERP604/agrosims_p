@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/output.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <title>Agrosims | Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/login.js" defer></script>
+</head>
+<body>
+    <main>
+        <header class="header py-4 px-10 flex items-center top-0 w-full justify-between bg-main-color text-light-color shadow-md font-semibold">
+            <div class="nav__logo text-xl font-semibold cursor-pointer ">
+                <a href="">🌵 Agrosims</a>
+            </div>
+            <nav>
+                <ul class="nav__sidebar shadow-xl">
+                    <li class="text-dark-color mt-5 text-xl"><a class="nav__sidebar__a cursor-pointer" onclick="hideSidebar()"><i class="fa-solid fa-close"></i></a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="./index.html">Inicio</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="contacto.html">Contáctanos</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="conocenos.html">Nosotros</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="https://verqor.com/">Ir a Verqor</a></li>
+                </ul>
+                <ul class="flex [&>li>a]:inline-block [&>li>a]:px-4">
+                    <li class="hover:scale-110 hideOnMobile"><a href="./index.html">Inicio</a></li>
+                    <li class="hover:scale-110 hideOnMobile"><a href="contacto.html">Contáctanos</a></li>
+                    <li class="hover:scale-110 hideOnMobile"><a href="conocenos.html">Nosotros</a></li>
+                    <li class="hover:scale-110 hideOnMobile"><a href="https://verqor.com/">Ir a Verqor</a></li>
+                    <li class="menu_button text-2xl leading-3 cursor-pointer" onclick="showSidebar()"><a><i class="fa-solid fa-bars"></i></a></span></li>
+                </ul>
+            </nav>
+        </header>  
+        <div class="container-all w-full">
+            <div class="container mx-auto mt-10" id="container">
+                <div class="form-container sign-up">
+                    <form id="register_form">
+                        <h1 class="text-4xl font-semibold mb-2">Crear una cuenta</h1>
+                        <input id="nombre_u" class="general" type="text" placeholder="Nombre(s)" />
+                        <div class="contenedor_apellido w-full flex justify-between my-2">
+                            <input id="apellido_paterno_u" class="w-1/2 mr-3" type="text" placeholder="Apellido paterno"/>
+                            <input id="apellido_materno_u" class="w-1/2" type="text" placeholder="Apellido materno"/>
+                        </div>
+                        <input id="fecha_nacimiento_u" class="general text-gray-400" type="date"/>
+                        <div class="contenedor_apellido w-full flex justify-between my-2">
+                            <select id="entidad" class="w-1/2 mr-3  text-gray-400" required>
+								<option value="" disabled selected>Estado</option>
+								<option value="Aguascalientes">Aguascalientes</option>
+								<option value="Baja California">Baja California</option>
+								<option value="Baja California Sur">Baja California Sur</option>
+								<option value="Campeche">Campeche</option>
+								<option value="Chiapas">Chiapas</option>
+								<option value="Chihuahua">Chihuahua</option>
+								<option value="Ciudad de México">Ciudad de México</option>
+								<option value="Coahuila">Coahuila</option>
+								<option value="Colima">Colima</option>
+								<option value="Durango">Durango</option>
+								<option value="Estado de México">Estado de México</option>
+								<option value="Guanajuato">Guanajuato</option>
+								<option value="Guerrero">Guerrero</option>
+								<option value="Hidalgo">Hidalgo</option>
+								<option value="Jalisco">Jalisco</option>
+								<option value="Michoacán">Michoacán</option>
+								<option value="Morelos">Morelos</option>
+								<option value="Nayarit">Nayarit</option>
+								<option value="Nuevo León">Nuevo León</option>
+								<option value="Oaxaca">Oaxaca</option>
+								<option value="Puebla">Puebla</option>
+								<option value="Querétaro">Querétaro</option>
+								<option value="Quintana Roo">Quintana Roo</option>
+								<option value="San Luis Potosí">San Luis Potosí</option>
+								<option value="Sinaloa">Sinaloa</option>
+								<option value="Sonora">Sonora</option>
+								<option value="Tabasco">Tabasco</option>
+								<option value="Tamaulipas">Tamaulipas</option>
+								<option value="Tlaxcala">Tlaxcala</option>
+								<option value="Veracruz">Veracruz</option>
+								<option value="Yucatán">Yucatán</option>
+								<option value="Zacatecas">Zacatecas</option>
+								
+                            </select>                        
+                            <select id="tipo_usuario" class="w-1/2  text-gray-400" required type="text">
+                                <option value="" disabled selected>Tipo de usuario</option>
+                                <option value="Agricultor">Agricultor</option>
+                                <option value="Estudiante">Estudiante</option>
+                                <option value="Inversionista">Inversionista/Socio</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <input id="nombre_usuario_u" class="general" type="text" placeholder="Nombre de usuario"/>
+                        <div class="contenedor_apellido w-full flex justify-between my-2">
+                            <input id="correo_electronico_u" class="w-1/2 mr-3" type="email" placeholder="Correo electrónico" />
+                            <input id="contrasena_u" class="w-1/2" type="password" placeholder="Contraseña" />
+                        </div>
+                        <button type="submit">Registrarse</button>
+                        <div class="social-icons">
+                            <!--No hay iconos-->
+                        </div>
+                    </form>
+                </div>
+                <div class="form-container sign-in">
+                    <form id="login_form">
+                        <h1 class="text-4xl font-semibold mb-2">Iniciar sesión</h1>
+                        <input id="correo_e" class="general" type="email" placeholder="Correo electrónico" />
+                        <input id="password" class="general" type="password" placeholder="Contraseña" />
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                        <button type="submit">Iniciar sesión</button>
+                        <div class="social-icons">
+                            <!--No hay iconos-->
+                        </div>
+                    </form>
+                </div>
+                <div class="toggle-container">
+                    <div class="toggle">
+                        <div class="toggle-panel toggle-left">
+                            <h1 class="text-4xl font-semibold mb-2">¿Ya tienes cuenta?</h1>
+                            <p>Ingresa aquí 👇.</p>
+                            <button class="hiddenb" id="login">Iniciar sesión</button>
+                        </div>
+                        <div class="toggle-panel toggle-right">
+                            <h1 class="text-4xl font-semibold mb-2">¿No tienes cuenta?</h1>
+                            <p>
+                                Registrate aquí 👇.
+                            </p>
+                            <button class="hiddenb" id="register">Registrarse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer__distributed bottom-0 bg-dark-color text-light-color box-border w-full p-10 mt-10">
+            <div class="footer__left ml-8">
+                <h3 class="text-2xl m-0 font-semibold">🌵Agrosims</h3>
+                <p class="footer__links">
+                    <a href="./index.html">Inicio</a>
+                    |
+                    <a href="contacto.html">Contáctanos</a>
+                    |
+                    <a href="conocenos.html">Nosotros</a>
+                    |
+                    <a href="https://verqor.com/">Ir a Verqor</a>
+                </p>
+                <p class="footer__company__name">Copyright &copy; 2024 <strong>Agrosims</strong> Todos los derechos reservados</p>
+            </div>
+            <div class="footer__center">
+                <div class="flex">
+                    <i class="fa fa-map-marker"></i>
+                    <p>México, CDMX</p>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-phone"></i>
+                    <p>+52-5598677654</p>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-mail-bulk"></i>
+                    <p><a href="">agrosims@company.com</a></p>
+                </div>
+            </div>
+            <div class="footer__right">
+                <p class="footer__company__about">
+                    <span class="block font-semibold text-lg">Acerca de la empresa</span>
+                    Agrosims es una empresa que se dedica a la simulación de cultivos agrícolas, con el fin de ayudar a los agricultores a tomar decisiones informadas.
+                </p>
+            </div>
+        </footer>
+    </main>    
+</body>
+</html>

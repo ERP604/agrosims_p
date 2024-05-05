@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/output.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>Agrosims | Conocenos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <script src="../JS/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <header class="header py-4 px-10 flex items-center fixed top-0 w-full justify-between bg-main-color text-light-color shadow-md font-semibold">
+            <div class="nav__logo text-xl font-semibold cursor-pointer ">
+                <a href="">🌵 Agrosims</a>
+            </div>
+            <nav>
+                <ul class="nav__sidebar shadow-xl">
+                    <li class="text-dark-color mt-5 text-xl"><a class="nav__sidebar__a cursor-pointer" onclick="hideSidebar()"><i class="fa-solid fa-close"></i></a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="./index.html">Inicio</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="./contacto.html">Contáctanos</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="./conocenos.html">Nosotros</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="https://verqor.com/">Ir a Verqor</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="./admin.html">Administrar</a></li>
+                    <div class="bg-contrast-color rounded-lg nav__div nav__sidebar__div"><a class="px-4" href="/HTML/login.html">Iniciar Sesión</a></div>
+                    <div class="bg-contrast-color rounded-lg nav__div nav__sidebar__div"><a class="px-5" href="/HTML/login.html">Resgistrarte</a></div>
+                </ul>
+                <ul class="flex [&>li>a]:inline-block [&>li>a]:px-4">
+                    <li class="hover:scale-110 hideOnMobile"><a href="./index.html">Inicio</a></li>
+                    <li class="hover:scale-110 hideOnMobile"><a href="./contacto.html">Contáctanos</a></li>
+                    <li class="hover:scale-110 hideOnMobile"><a href="./conocenos.html">Nosotros</a></li>
+                    <li class="hover:scale-110 hideOnMobile"><a href="https://verqor.com/">Ir a Verqor</a></li>
+                    <li class="hover:scale-110 hideOnMobile hidden"><a href="admin.html">Administrar</a></li>
+                    <li class="nav__perfil rounded-full h-7 w-7 border-2 mx-4 hidden"><a class="nav__name__perfil" href="./perfil.html">Y</a></li>
+                    <div class="inline-block hideOnMobile mx-4 bg-contrast-color rounded-lg hover:scale-110 nav__div"><a class="p-4" href="/HTML/login.html">Iniciar Sesión</a></div>
+                    <div class="inline-block hideOnMobile mx-4 bg-contrast-color rounded-lg hover:scale-110 nav__div"><a class="p-4" href="/HTML/login.html">Resgistrarte</a></div>
+                    <li class="menu_button text-2xl leading-3 cursor-pointer" onclick="showSidebar()"><a><i class="fa-solid fa-bars"></i></a></span></li>
+                </ul>
+            </nav>
+        </header>  
+        <div class="contenedor mt-14 w-full">
+            <div class="contaner__title">
+                <h1 class="text-3xl font-semibold text-center mb-7">Conócenos</h1>
+            </div>
+            <div class="contain_izquierda flex p-8 bg-contrast-color w-full justify-center">
+                <div class="contain_image w-1/3">
+                    <img class="image_selector mx-auto my-auto w-2/3 h-auto" src="../IMG/Andy.png" alt="Andy developer">
+                </div>
+                <div class="contain_info my-auto mx-8 w-1/2 text-light-color">
+                    <h3 class="name mb-4 text-3xl font-semibold ">Andrea</h3>
+                    <div class="info text-justify text-md">
+                        <p>Soy una estudiante de Sistemas Computacionales, cuyo amor por la tecnología solo es superado por mi pasión por los libros de romance y las películas de acción. Desde mi primer código hasta mi último proyecto en desarrollo de videojuegos, he combinado mi experiencia técnica con una creatividad sin límites.</p>
+                    </div>
+                    <div class="contacto mt-4 border p-2 w-28 text-center font-semibold rounded-md hover:scale-110">
+                        <a href="">Contáctame</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contain_izquierda flex p-8 bg-light-color w-full justify-center">
+                <div class="contain_info my-auto mx-8 w-1/2 text-dark-color">
+                    <h3 class="name mb-4 text-3xl font-semibold ">Ignacio</h3>
+                    <div class="info text-justify text-md">
+                        <p>Soy un estudiante apasionado de Sistemas Computacionales con un entusiasmo contagioso por el volleyball, los videojuegos y la programación. Mi habilidad para analizar estrategias complejas en la cancha se traslada de manera impresionante a mis proyectos de programación, donde mi agudeza y precisión son igualmente notables.</p>
+                    </div>
+                    <div class="contacto mt-4 border  border-gray-500 p-2 w-28 text-center font-semibold rounded-md hover:scale-110">
+                        <a href="">Contáctame</a>
+                    </div>
+                </div>
+                <div class="contain_image w-1/3">
+                    <img class="image_selector mx-auto my-auto w-2/3 h-auto" src="../IMG/Nacho.png" alt="Ignacio developer">
+                </div>
+            </div>
+            <div class="contain_izquierda flex p-8 bg-contrast-color w-full justify-center">
+                <div class="contain_image w-1/3">
+                    <img class="image_selector mx-auto my-auto w-2/3 h-auto" src="../IMG/Jenny.png" alt="Jenny developer">
+                </div>
+                <div class="contain_info my-auto mx-8 w-1/2 text-light-color">
+                    <h3 class="name mb-4 text-3xl font-semibold ">Jenny</h3>
+                    <div class="info text-justify text-md">
+                        <p>Soy una estudiante de Tecnologías Computacionales que combina su amor por los k-dramas y el anime con una fascinación por la medicina, llevando mi pasión por las narrativas complejas y los personajes emocionalmente ricos al mundo de la tecnología. Mi enfoque único en la programación y el desarrollo de software está inspirado por las historias de resiliencia y los desafíos médicos que veo en pantalla.</p>
+                    </div>
+                    <div class="contacto mt-4 border p-2 w-28 text-center font-semibold rounded-md hover:scale-110">
+                        <a href="">Contáctame</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contain_izquierda flex p-8 bg-light-color w-full justify-center">
+                <div class="contain_info my-auto mx-8 w-1/2 text-dark-color">
+                    <h3 class="name mb-4 text-3xl font-semibold ">Yael</h3>
+                    <div class="info text-justify text-md">
+                        <p>Soy un estudiante dinámico de Ciencias Computacionales, cuyo entusiasmo por la calistenia y la escalada se refleja en mi enfoque riguroso y metódico hacia la programación web. Mi pasión por superar obstáculos físicos y técnicos me ha enseñado la importancia de la resiliencia y la precisión, cualidades que aplico diariamente en mi carrera como programador.</p>
+                    </div>
+                    <div class="contacto mt-4 border border-gray-500 p-2 w-28 text-center font-semibold rounded-md hover:scale-110">
+                        <a href="https://www.instagram.com/yaelpm04088?igsh=dW9ldmduZm9zdXE2">Contáctame</a>
+                    </div>
+                </div>
+                <div class="contain_image w-1/3">
+                    <img class="image_selector mx-auto my-auto w-2/3 h-auto" src="../IMG/yael.png" alt="Yael developer">
+                </div>
+            </div>
+            <div class="contain_izquierda flex p-8 bg-contrast-color w-full justify-center">
+                <div class="contain_image w-1/3">
+                    <img class="image_selector mx-auto my-auto w-2/3" src="../IMG/eduardo.png" alt="Eduardo developer">
+                </div>
+                <div class="contain_info my-auto mx-8 w-1/2 text-light-color">
+                    <h3 class="name mb-4 text-3xl font-semibold ">Eduardo</h3>
+                    <div class="info text-justify text-md">
+                        <p>Soy un estudiante de Tecnologías Computacionales cuya vida gira en torno a la exploración y la innovación. Con un profundo amor por los videojuegos y el ciclismo de montaña, combinó mi pasión por las aventuras al aire libre con mi talento en la programación back-end para crear soluciones tecnológicas robustas y eficientes.</p>
+                    </div>
+                    <div class="contacto mt-4 border p-2 w-28 text-center font-semibold rounded-md hover:scale-110">
+                        <a href="">Contáctame</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer__distributed bottom-0 bg-dark-color text-light-color box-border w-full p-10 mt-16">
+            <div class="footer__left ml-8">
+                <h3 class="text-2xl m-0 font-semibold">🌵Agrosims</h3>
+                <p class="footer__links">
+                    <a href="./index.html">Inicio</a>
+                    |
+                    <a href="./contacto.html">Contáctanos</a>
+                    |
+                    <a href="./conocenos.html">Nosotros</a>
+                    |
+                    <a href="https://verqor.com/">Ir a Verqor</a>
+                </p>
+                <p class="footer__company__name">Copyright &copy; 2024 <strong>Agrosims</strong> Todos los derechos reservados</p>
+            </div>
+            <div class="footer__center">
+                <div class="flex">
+                    <i class="fa fa-map-marker"></i>
+                    <p>México, CDMX</p>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-phone"></i>
+                    <p>+52-5598677654</p>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-mail-bulk"></i>
+                    <p><a href="">agrosims@company.com</a></p>
+                </div>
+            </div>
+            <div class="footer__right">
+                <p class="footer__company__about">
+                    <span class="block font-semibold text-lg">Acerca de la empresa</span>
+                    Agrosims es una empresa que se dedica a la simulación de cultivos agrícolas, con el fin de ayudar a los agricultores a tomar decisiones informadas.
+                </p>
+            </div>
+        </footer>
+    </main>    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/output.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>Agrosims | Contáctanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <script src="../JS/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <header class="header py-4 px-10 flex items-center fixed top-0 w-full justify-between bg-main-color text-light-color shadow-md font-semibold">
+            <div class="nav__logo text-xl font-semibold cursor-pointer ">
+                <a href="">🌵 Agrosims</a>
+            </div>
+            <nav>
+                <ul class="nav__sidebar shadow-xl">
+                    <li class="text-dark-color mt-5 text-xl"><a class="nav__sidebar__a cursor-pointer" onclick="hideSidebar()"><i class="fa-solid fa-close"></i></a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="./index.html">Inicio</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="./contacto.html">Contáctanos</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="./conocenos.html">Nosotros</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="https://verqor.com/">Ir a Verqor</a></li>
+                    <li class="text-dark-color hover:bg-contrast-color hover:text-light-color nav__sidebar__li"><a class="nav__sidebar__a" href="./admin.html">Administrar</a></li>
+                    <div class="bg-contrast-color rounded-lg nav__div nav__sidebar__div"><a class="px-4" href="/HTML/login.html">Iniciar Sesión</a></div>
+                    <div class="bg-contrast-color rounded-lg nav__div nav__sidebar__div"><a class="px-5" href="/HTML/login.html">Resgistrarte</a></div>
+                </ul>
+                <ul class="flex [&>li>a]:inline-block [&>li>a]:px-4">
+                    <li class="hover:scale-110 hideOnMobile"><a href="./index.html">Inicio</a></li>
+                    <li class="hover:scale-110 hideOnMobile"><a href="./contacto.html">Contáctanos</a></li>
+                    <li class="hover:scale-110 hideOnMobile"><a href="./conocenos.html">Nosotros</a></li>
+                    <li class="hover:scale-110 hideOnMobile"><a href="https://verqor.com/">Ir a Verqor</a></li>
+                    <li class="hover:scale-110 hideOnMobile hidden"><a href="admin.html">Administrar</a></li>
+                    <li class="nav__perfil rounded-full h-7 w-7 border-2 mx-4 hidden"><a class="nav__name__perfil" href="./perfil.html">Y</a></li>
+                    <div class="inline-block hideOnMobile mx-4 bg-contrast-color rounded-lg hover:scale-110 nav__div"><a class="p-4" href="/HTML/login.html">Iniciar Sesión</a></div>
+                    <div class="inline-block hideOnMobile mx-4 bg-contrast-color rounded-lg hover:scale-110 nav__div"><a class="p-4" href="/HTML/login.html">Resgistrarte</a></div>
+                    <li class="menu_button text-2xl leading-3 cursor-pointer" onclick="showSidebar()"><a><i class="fa-solid fa-bars"></i></a></span></li>
+                </ul>
+            </nav>
+        </header>  
+        <div class=" mt-20">
+            <div class="container mx-auto">
+                <div class="container__form w-1/2  mx-auto overflow-hidden p-8">
+                    <div class="w-full text-center text-dark-color">
+                        <h2 class="text-3xl font-semibold mb-4">Contáctanos</h2>
+                    </div>
+                    <form class="text-center [&>div>input]:py-3 [&>div>input]:px-2 [&>div>input]:rounded-md [&>div>input]:w-3/4 [&>div>input]:text-dark-color [&>div>input]:bg-light-color [&>div>input]:outline-none [&>div>input]:text-sm [&>div]:mb-5" action="https://formsubmit.co/cfff412a38798889aab5ecb0f22d0f1f" method="POST">
+                        <div class="">
+                            <input required name="nombre" type="text" class="form-control" id="firstName" placeholder="Nombre">
+                        </div>
+                        <div class="">
+                            <input required name="apellidoPaterno" type="text" class="form-control" id="lastName" placeholder="Apellido paterno">
+                        </div>
+                        <div class="">
+                            <input required name="apellidoMaterno" type="text" class="form-control" id="secondLastName" placeholder="Apellido materno">
+                        </div>
+                        <div class="">
+                            <input required maxlength="10" name="telefono" type="tel" class="form-control" id="phone" placeholder="Número de teléfono">
+                        </div>
+                        <div class="">
+                            <textarea required name="comentarios" class="form-control w-3/4 py-1 px-2 rounded-md resize-none text-dark-color outline-none text-sm" id="comment" rows="3" placeholder="Su comentario"></textarea>
+                        </div>
+                        <div class="">
+                            <button type="submit" class="w-3/4 bg-contrast-color border py-2 rounded-lg text-light-color font-semibold" >ENVIAR</button>
+                        </div>
+                        <input type="hidden" name="_next" value="http://localhost:4000/HTML/contacto.html">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer__distributed bottom-0 bg-dark-color text-light-color box-border w-full p-10 mt-16">
+            <div class="footer__left ml-8">
+                <h3 class="text-2xl m-0 font-semibold">🌵Agrosims</h3>
+                <p class="footer__links">
+                    <a href="./index.html">Inicio</a>
+                    |
+                    <a href="./contacto.html">Contáctanos</a>
+                    |
+                    <a href="./conocenos.html">Nosotros</a>
+                    |
+                    <a href="https://verqor.com/">Ir a Verqor</a>
+                </p>
+                <p class="footer__company__name">Copyright &copy; 2024 <strong>Agrosims</strong> Todos los derechos reservados</p>
+            </div>
+            <div class="footer__center">
+                <div class="flex">
+                    <i class="fa fa-map-marker"></i>
+                    <p>México, CDMX</p>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-phone"></i>
+                    <p>+52-5598677654</p>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-mail-bulk"></i>
+                    <p><a href="">agrosims@company.com</a></p>
+                </div>
+            </div>
+            <div class="footer__right">
+                <p class="footer__company__about">
+                    <span class="block font-semibold text-lg">Acerca de la empresa</span>
+                    Agrosims es una empresa que se dedica a la simulación de cultivos agrícolas, con el fin de ayudar a los agricultores a tomar decisiones informadas.
+                </p>
+            </div>
+        </footer>
+    </main>    
+</body>
+</html>
